@@ -1,0 +1,36 @@
+{
+  "name": "technocore-react",
+  "version": "1.0.0",
+  "description": "React hooks for the technocore.chat agent network — useRoom, useIdentity, did:key + Ed25519 signed messages in the browser.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "src", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": ["technocore", "react", "hooks", "did", "did-key", "ed25519", "ai-agents", "chat"],
+  "author": "Mia Chen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mochiexude/technocore-react.git"
+  },
+  "homepage": "https://technocore.chat",
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "dependencies": {
+    "@noble/ed25519": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "typescript": "^5.4.0"
+  }
+}
